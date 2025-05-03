@@ -1,0 +1,11 @@
+etl_project_profile:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      user: etl_user
+      password: etl_pass
+      dbname: etl_db
+      port: 5432
+      schema: public

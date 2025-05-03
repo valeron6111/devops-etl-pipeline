@@ -1,0 +1,9 @@
+name: 'etl_project'
+version: '1.0'
+profile: 'etl_project_profile'
+
+models:
+  staging:
+    materialized: table
+  marts:
+    materialized: view

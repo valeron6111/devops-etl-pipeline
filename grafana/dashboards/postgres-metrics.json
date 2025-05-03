@@ -1,0 +1,28 @@
+{
+    "dashboard": {
+      "id": null,
+      "uid": "postgres-metrics",
+      "title": "PostgreSQL Metrics",
+      "tags": ["postgres", "metrics"],
+      "timezone": "browser",
+      "schemaVersion": 27,
+      "version": 0,
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Active Connections",
+          "targets": [
+            {
+              "target": "pg_stat_activity_count",
+              "refId": "A",
+              "datasource": {
+                "type": "postgres",
+                "uid": "postgres"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
